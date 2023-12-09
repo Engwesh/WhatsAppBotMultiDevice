@@ -17,24 +17,24 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
     // const sections = [{
     //     title: "Categories",
     //     rows: [
-    //         { title: `${prefix}horo aries`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo taurus`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo gemini`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo cancer`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo leo`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo virgo`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo libra`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo scorpio`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo sagittarius`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo capricorn`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo aquarius`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo pisces`, rowId: "eva", description: "" },
+    //         { title: `${prefix}horo aries`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo taurus`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo gemini`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo cancer`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo leo`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo virgo`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo libra`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo scorpio`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo sagittarius`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo capricorn`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo aquarius`, rowId: "weshed", description: "" },
+    //         { title: `${prefix}horo pisces`, rowId: "weshed", description: "" },
     //     ]
     // }]
 
     // const listMessage = {
     //     text: "Horoscope",
-    //     footer: "Send by eva",
+    //     footer: "Send by weshed",
     //     buttonText: "Click here",
     //     viewOnce: true,
     //     sections

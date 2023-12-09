@@ -21,7 +21,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
 
     try {
         await sock.groupParticipantsUpdate(from, [taggedJid], "remove").then(() => {
-            sendMessageWTyping(from, { text: `✔️ *Removed*` }, { quoted: msg });
+            sendMessageWTyping(from, { text: `✔️ *Removed successfully!*` }, { quoted: msg });
         }).catch((err) => {
             console.log(err);
         });

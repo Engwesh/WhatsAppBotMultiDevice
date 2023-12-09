@@ -13,7 +13,7 @@ const findSongURL = async (name) => {
 const handler = async (sock, msg, from, args, msgInfoObj) => {
     const { evv, command, sendMessageWTyping } = msgInfoObj;
 
-    if (!args[0]) return sendMessageWTyping(from, { text: `❌ *Enter song name*` }, { quoted: msg });
+    if (!args[0]) return sendMessageWTyping(from, { text: `❌ *Provide a search term*\n  Eg:*Alan Walker Faded*` }, { quoted: msg });
     console.log("Song:", evv);
 
     let URL = await findSongURL(evv);
@@ -25,7 +25,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
             console.log(r);
             if (r?.includes("max-filesize")) {
                 return sendMessageWTyping(from,
-                    { text: "File size exceeds more then 100MB." },
+                    { text: "File size bigger!" },
                     { quoted: msg }
                 )
             } else {

@@ -15,10 +15,10 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
         if (!(msg.message.extendedTextMessage.contextInfo.participant == botNumberJid)) {
 
             if (!groupAdmins.includes(senderJid))
-                return sendMessageWTyping(from, { text: `❌ Only admin can delete others message` }, { quoted: msg });
+                return sendMessageWTyping(from, { text: `❌ Are you admin to decide that?` }, { quoted: msg });
 
             if (!groupAdmins.includes(botNumberJid))
-                return sendMessageWTyping(from, { text: `❌ Bot need to be admin in order to delete others message` }, { quoted: msg });
+                return sendMessageWTyping(from, { text: `❌ Am I admin here?` }, { quoted: msg });
         }
 
         let options = {

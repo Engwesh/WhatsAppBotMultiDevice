@@ -9,7 +9,7 @@ const Client = new Genius.Client(process.env.GENIUS_ACCESS_SECRET);
 const handler = async (sock, msg, from, args, msgInfoObj) => {
     const { sendMessageWTyping, evv } = msgInfoObj;
 
-    if (!args[0]) return sendMessageWTyping(from, { text: "Enter the song name." }, { quoted: msg });
+    if (!args[0]) return sendMessageWTyping(from, { text: "*Provide a search term*\n Eg: *Alan Walker faded*" }, { quoted: msg });
 
     const searches = await Client.songs.search(evv);
     const firstSong = searches[0];

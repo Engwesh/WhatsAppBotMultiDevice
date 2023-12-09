@@ -8,7 +8,7 @@ const openai = new OpenAI({
 const handler = async (sock, msg, from, args, msgInfoObj) => {
     const { sendMessageWTyping, evv } = msgInfoObj;
     //return sendMessageWTyping(from, { text: "This command is currently disabled." }, { quoted: msg });
-    if (!args[0]) return sendMessageWTyping(from, { text: "Please provide a prompt to generate an image from." }, { quoted: msg });
+    if (!args[0]) return sendMessageWTyping(from, { text: "This will generate an  AI based image! \n Eg: cute cat" }, { quoted: msg });
     await openai.images.generate({
         prompt: evv,
         n: 1,

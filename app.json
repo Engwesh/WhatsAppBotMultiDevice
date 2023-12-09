@@ -22,8 +22,8 @@
       "description": "MongoDB Key to store data",
       "required": true
     },
-    "myNumber": {
-      "description": "Your WhatsApp Number to use as bot owner",
+    "myNumbers": {
+      "description": "Your WhatsApp Numbers to use as bot owner",
       "required": true
     },
     "botNumber": {

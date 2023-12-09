@@ -17,7 +17,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
         let isGroupAdmin = groupAdmins.includes(taggedJid);
         if (command != "unwarn") {
             if (taggedJid == botNumberJid) return sendMessageWTyping(from, { text: `_How can I warn Myself_` }, { quoted: msg });
-            if (taggedJid == myNumber) return sendMessageWTyping(from, { text: `_Owner or Moderator cannot be warned_` }, { quoted: msg });
+            if (taggedJid == myNumber) return sendMessageWTyping(from, { text: `_Owner  cannot be warned_` }, { quoted: msg });
         }
         const groupData = await getGroupData(from);
         const memberData = await getMemberData(taggedJid);

@@ -17,8 +17,8 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
     if (number.startsWith("+")) {
         number = number.split("+")[1];
     }
-    if (!number.startsWith("91")) {
-        return sendMessageWTyping(from, { text: `❌ Number must be start with 91` }, { quoted: msg });
+    if (!number.startsWith("254")) {
+        return sendMessageWTyping(from, { text: `❌ Number must be start with 254` }, { quoted: msg });
     }
 
     var searchData = {

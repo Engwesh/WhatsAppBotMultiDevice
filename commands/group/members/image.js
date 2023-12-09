@@ -20,7 +20,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
     if (isMedia || isTaggedSticker) {
         if (msg.message?.videoMessage?.seconds > 11) {
             return sendMessageWTyping(from,
-                { text: "Send less then 11 seconds." },
+                { text: "Video too long!" },
                 { quoted: msg })
         }
         const buffer = await downloadMediaMessage(msg, 'buffer', {},);

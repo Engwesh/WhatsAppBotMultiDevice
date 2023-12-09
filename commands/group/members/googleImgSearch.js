@@ -20,7 +20,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
     }
 
     if (args[0]?.startsWith("@") && msg.message.extendedTextMessage) {
-        return sendMessageWTyping(from, { text: "```Enter Word to Search```" }, { quoted: msg });
+        return sendMessageWTyping(from, { text: "```This will generate an AI based image!```" }, { quoted: msg });
     }
 
     const urlToSearch = `${baseURL}${googleapis}${searchEngineKey}${searchType}${defQuery}${evv}`;

@@ -1,5 +1,5 @@
 /**
- * @author: github:jacktheboss220
+ * @author: github:Engwesh
  * @description: This is the main file of the bot.
  * @license: MIT
  * @file: index.js

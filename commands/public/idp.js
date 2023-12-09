@@ -37,7 +37,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
                 sendMessageWTyping(from,
                     {
                         image: { url: res.data.graphql.user.profile_pic_url_hd },
-                        caption: `Sent by eva`
+                        caption: `Sent by Weshed`
                     },
                     { quoted: msg }
                 )
